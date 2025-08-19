@@ -1,21 +1,40 @@
 {
   "name": "koishi-plugin-group-memo",
-  "description": "memo",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "一个简单的群组备忘录 koishi 插件。",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "author": "WhiteBr1ck (https://github.com/WhiteBr1ck)",
   "license": "MIT",
-  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhiteBr1ck/koishi-plugin-group-memo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WhiteBr1ck/koishi-plugin-group-memo/issues"
+  },
+  "homepage": "https://github.com/WhiteBr1ck/koishi-plugin-group-memo#readme",
   "keywords": [
-    "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "memo",
+    "notes",
+    "reminder",
+    "备忘录"
   ],
-  "devDependencies": {},
+  "koishi": {
+    "name": "群组备忘录",
+     "description": {
+      "zh": "群组备忘录，通过指令将消息加入备忘录中。"
+    },
+    "services": [
+      "database"
+    ]
+  },
   "peerDependencies": {
     "koishi": "^4.18.7"
   }
